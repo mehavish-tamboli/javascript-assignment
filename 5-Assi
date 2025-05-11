@@ -1,0 +1,145 @@
+console.log("================= Given string====================================");
+console.log("given string is: Hey you are doing good,keep it up");
+
+var greet= "given string is:  Hey you are doing good,keep it up";
+
+
+//Calculate length of string
+vargreet= "greet.length"
+console.log(`string length is: ${greet.length}`);
+
+
+
+console.log(`========== trim() ===============`);
+
+var greet1 = "   Hey you are doing good,keep it up  ";
+
+//After trim
+var greet="    Hey you are doing good,keep it up"  ;
+console.log(`After trim:${greet}`);
+
+//before trim
+var greet="             Hey you are doing good,keep it up";
+console.log(`before trim length:${greet.length}`);
+
+//length after trim
+var greet1="Hey you are doing good,keep it up ";
+console.log(`after trim length: ${greet1.length}`);
+
+//remove extra spaces
+var str = "   Hey you are doing good, keep it up   ";
+var originalLength = str.length;
+
+// Remove all spaces from the string
+var noSpaceStr = str.replace(/\s/g, '');
+var noSpaceLength = noSpaceStr.length;
+
+// Total spaces removed = original length - length without spaces
+var totalSpacesRemoved = originalLength - noSpaceLength;
+
+console.log("Total spaces removed:", totalSpacesRemoved);
+
+
+
+
+
+
+console.log("==========Print first and last character===================");
+var str= "Hey you are doing good, keep it up";
+var firstchar= str[0];
+var lastchar=str[str.length-1];
+console.log("First character:", firstchar);
+console.log("Last character:", lastchar);
+
+
+var str = "Hey you are doing good, keep it up";
+
+// Total number of characters (including spaces & punctuation)
+let totalCharacters = str.length;
+
+console.log("Total number of characters in the string is:", totalCharacters);
+
+
+
+
+
+
+console.log("=============index of words===================");
+var str = "Hey you are doing good, keep it up";
+
+// Step 1: Trim string to remove leading/trailing spaces
+let trimmedStr = str.trim();
+
+// Step 2: Split the string by one or more spaces using regex
+let wordsArray = trimmedStr.split(/\s+/);
+
+// Step 3: Count the words
+let wordCount = wordsArray.length;
+
+console.log("Number of words in the string is:", wordCount);
+
+var str = "   Hey you are doing good, keep it up";
+
+// Find index of word "good"
+let index = str.indexOf("good");
+
+console.log("Index of 'good' is:", index);
+
+
+console.log("=============substring starting index====================");
+
+var str = "    Hey you are doing good, keep it up";
+
+console.log("substarting index");
+
+var subStr = str.substring(22);
+
+console.log("Substring starting from index 22 is:", subStr);
+
+
+console.log("=========string end with========================");
+
+var str = "Hey you are doing good, keep it up";
+
+// Check if string ends with "up"
+var result = str.trim().endsWith("up");
+
+console.log("String ends with 'up' :", result);
+
+
+console.log("=========string start with====================");
+
+var str = "Hey you are doing good, keep it up";
+
+// Check if string start with "Hey"
+var result = str.trim().startsWith("Hey");
+
+console.log("String ends with 'Hey' :", result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
